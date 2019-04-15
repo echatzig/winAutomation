@@ -13,11 +13,12 @@ namespace SoftClient
         static string listen = ""; // example: "http://localhost:8000";
         static string server = ""; // example: "http://localhost:9000"
 
-        static void Main(string[] args)
+        static int Main(string[] args)
         {
             if (args.Length != 4 || args[0] != "-listen" || args[2] != "-connect") { 
                 Console.WriteLine($"Usage: SoftClient -listen url -connect server");
                 Console.WriteLine($"   e.g: SoftClient -listen http://localhost:8000 -connect http://localhost:9000");
+                return 1;
             }
 
 
@@ -36,6 +37,8 @@ namespace SoftClient
                 Console.ReadLine();
                 Console.ReadLine();
             }
+
+            return 0;
         }
 
         static async Task<string> DoRun()
