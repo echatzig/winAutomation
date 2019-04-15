@@ -1,0 +1,6 @@
+﻿select-window "Firefox - www.google.com"
+mouse-move 192, 100
+mouse-click single-click
+send-keys "today in wikipedia"
+mouse-move 192, 150
+mouse-click single-click
