@@ -107,6 +107,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="ScriptSamples\Notepad.script" />
     <None Include="ScriptSamples\Firefox.script" />
   </ItemGroup>
   <ItemGroup>
